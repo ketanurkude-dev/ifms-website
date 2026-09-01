@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IFMS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .icon { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+</head>
+<body class="min-h-screen bg-white text-slate-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-20 bg-white border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded bg-blue-800 text-white flex items-center justify-center text-xs font-semibold">
+          EN
+        </div>
+        <div class="leading-tight">
+          <p class="font-semibold text-slate-800 text-sm">Government of NCT of Delhi</p>
+          <p class="text-xs text-slate-500">Integrated Financial Management System</p>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-600">
+        <a href="#portals" class="hover:text-blue-800">Portals</a>
+        <a href="#verify" class="hover:text-blue-800">Verify a certificate</a>
+        <a href="#help" class="hover:text-blue-800">Help</a>
+      </nav>
+    </div>
+    <div class="h-1 bg-orange-500"></div>
+  </header>
+
+  <!-- Hero / portal picker -->
+  <section id="portals" class="relative border-b border-blue-100 overflow-hidden bg-gradient-to-b from-blue-50 to-sky-50">
+    <div
+      class="absolute inset-0 opacity-[0.06]"
+      style="background-image: linear-gradient(0deg, transparent 23px, #1d4ed8 24px), linear-gradient(90deg, transparent 23px, #1d4ed8 24px); background-size: 24px 24px;"
+    ></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-200/40 blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-16 w-80 h-80 rounded-full bg-sky-200/40 blur-3xl"></div>
+
+    <div class="relative max-w-5xl mx-auto px-6 py-20">
+      <span class="inline-flex items-center gap-1.5 text-xs font-medium text-blue-800 bg-blue-100 border border-blue-200 rounded-full px-3 py-1 mb-5">
+        <svg viewBox="0 0 24 24" class="icon w-3.5 h-3.5"><path d="M12 3.5 5 6v6c0 4.5 3 7.5 7 8.5 4-1 7-4 7-8.5V6z" /><path d="M9 12l2 2 4-4.5" /></svg>
+        Secure sign-in &middot; digitally signed documents
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-snug mb-3 tracking-tight">
+        One IFMS, two self-service portals
+      </h1>
+      <p class="text-slate-600 text-base leading-relaxed mb-10 max-w-xl">
+        Choose the portal that matches you. Serving employees is the
+        Employee Portal; serving retirees is the Pensioner Portal.
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <!-- Employee Portal card -->
+        <div class="bg-white border border-blue-100 rounded-xl p-7 shadow-sm shadow-blue-900/5">
+          <div class="w-11 h-11 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center mb-4">
+            <svg viewBox="0 0 24 24" class="icon w-5.5 h-5.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5" /><circle cx="12" cy="12" r="2.6" /></svg>
+          </div>
+          <h2 class="text-lg font-semibold text-slate-800 mb-1.5">Employee Portal</h2>
+          <p class="text-sm text-slate-500 leading-relaxed mb-6">
+            Salary slips, GPF, tax declarations, certificates, requests and
+            grievances &mdash; for serving employees.
+          </p>
+          <div class="flex gap-3">
+            <a
+              href="http://localhost:5173/login"
+              class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-900"
+            >
+              Sign in
+            </a>
+            <a
+              href="http://localhost:5173/register"
+              class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+
+        <!-- Pensioner Portal card -->
+        <div class="bg-white border border-blue-100 rounded-xl p-7 shadow-sm shadow-blue-900/5">
+          <div class="w-11 h-11 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center mb-4">
+            <svg viewBox="0 0 24 24" class="icon w-5.5 h-5.5"><circle cx="12" cy="9" r="5.5" /><path d="M8.7 13.8 7.5 20.5 12 18l4.5 2.5-1.2-6.7" /></svg>
+          </div>
+          <h2 class="text-lg font-semibold text-slate-800 mb-1.5">Pensioner Portal</h2>
+          <p class="text-sm text-slate-500 leading-relaxed mb-6">
+            Bank account details and requests, with more pension services on
+            the way &mdash; for pensioners and family pensioners.
+          </p>
+          <div class="flex gap-3">
+            <a
+              href="http://localhost:5174/login"
+              class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-900"
+            >
+              Sign in
+            </a>
+            <a
+              href="http://localhost:5174/register"
+              class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate verification -->
+  <section id="verify" class="bg-white">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-5 gap-10 items-start">
+        <div class="md:col-span-2">
+          <p class="text-xs font-medium text-blue-800 uppercase tracking-wide mb-2">Public tool &middot; no login</p>
+          <h2 class="text-xl font-semibold text-slate-800 mb-2">Verify a certificate</h2>
+          <p class="text-sm text-slate-500 leading-relaxed max-w-sm">
+            Anyone holding a certificate issued by the Employee Portal can
+            confirm it is genuine. Enter the certificate number printed on
+            the document.
+          </p>
+        </div>
+
+        <div class="md:col-span-3 bg-white border border-blue-100 rounded-lg p-6 shadow-sm shadow-blue-900/5">
+          <div class="flex flex-wrap gap-3">
+            <input
+              id="verify-input"
+              type="text"
+              placeholder="e.g. CERT/2026/000001"
+              class="flex-1 min-w-[220px] border border-slate-300 rounded px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+            <button
+              onclick="verifyCertificate()"
+              class="bg-blue-800 text-white px-5 py-2.5 rounded text-sm font-medium hover:bg-blue-900"
+            >
+              Verify
+            </button>
+          </div>
+
+          <div id="verify-result" class="mt-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    async function verifyCertificate() {
+      const number = document.getElementById('verify-input').value.trim();
+      const resultBox = document.getElementById('verify-result');
+      if (!number) return;
+      resultBox.innerHTML = '<p class="text-sm text-slate-500">Checking...</p>';
+      try {
+        const res = await fetch(`http://localhost:8000/certificates/verify/${encodeURIComponent(number)}`);
+        const data = await res.json();
+        if (data.valid) {
+          resultBox.innerHTML = `
+            <div class="border border-green-200 bg-green-50 rounded p-4 text-sm text-green-800">
+              <p class="font-medium mb-1.5 flex items-center gap-1.5">
+                <svg viewBox="0 0 24 24" class="icon w-4 h-4"><circle cx="12" cy="12" r="8.5" /><path d="M8.5 12.5l2 2 4.5-5" /></svg>
+                Valid certificate
+              </p>
+              <p>Type: ${data.certificate_type}</p>
+              <p>Issued to: ${data.employee_name} (${data.employee_code})</p>
+              <p>Issued on: ${data.issued_on}</p>
+            </div>`;
+        } else {
+          resultBox.innerHTML = `
+            <div class="border border-red-200 bg-red-50 rounded p-4 text-sm text-red-700">
+              ${data.message}
+            </div>`;
+        }
+      } catch (e) {
+        resultBox.innerHTML = '<p class="text-sm text-red-700">Could not reach the verification service.</p>';
+      }
+    }
+  </script>
+
+  <!-- Help strip -->
+  <section id="help" class="border-t border-blue-100 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-8 text-sm">
+      <div>
+        <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Need help?</p>
+        <p class="text-slate-700">Each portal has its own FAQ and grievance section once signed in.</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Helpdesk</p>
+        <p class="text-slate-700">1800-000-0000 (Mon&ndash;Fri, 9:30 AM&ndash;6:00 PM)</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">New employee?</p>
+        <p class="text-slate-700">
+          <a href="http://localhost:5173/register" class="text-blue-800 font-medium">Register</a>
+          on the Employee Portal with your employee particulars.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-blue-100 bg-blue-50">
+    <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded bg-blue-800 text-white flex items-center justify-center text-[10px] font-semibold">
+          EN
+        </div>
+        <span>Integrated Financial Management System</span>
+      </div>
+      <span>Prototype build &mdash; not connected to production data.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

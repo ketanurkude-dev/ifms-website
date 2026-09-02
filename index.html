@@ -29,6 +29,8 @@
         <a href="#verify" class="hover:text-blue-800">Verify a certificate</a>
         <a href="#help" class="hover:text-blue-800">Help</a>
       </nav>
+
+      <img src="assets/virtualgalaxy-logo.webp" alt="Virtual Galaxy" class="h-6 sm:h-7 hidden sm:block" />
     </div>
     <div class="h-1 bg-orange-500"></div>
   </header>
@@ -69,12 +71,16 @@
           <div class="flex gap-3">
             <a
               href="http://localhost:5173/login"
+              target="_blank"
+              rel="noopener"
               class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-900"
             >
               Sign in
             </a>
             <a
               href="http://localhost:5173/register"
+              target="_blank"
+              rel="noopener"
               class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
             >
               Register
@@ -95,12 +101,16 @@
           <div class="flex gap-3">
             <a
               href="http://localhost:5174/login"
+              target="_blank"
+              rel="noopener"
               class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-900"
             >
               Sign in
             </a>
             <a
               href="http://localhost:5174/register"
+              target="_blank"
+              rel="noopener"
               class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
             >
               Register
@@ -193,7 +203,7 @@
       <div>
         <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">New employee?</p>
         <p class="text-slate-700">
-          <a href="http://localhost:5173/register" class="text-blue-800 font-medium">Register</a>
+          <a href="http://localhost:5173/register" target="_blank" rel="noopener" class="text-blue-800 font-medium">Register</a>
           on the Employee Portal with your employee particulars.
         </p>
       </div>
@@ -202,7 +212,7 @@
 
   <!-- Footer -->
   <footer class="border-t border-blue-100 bg-blue-50">
-    <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
       <div class="flex items-center gap-2">
         <div class="w-6 h-6 rounded bg-blue-800 text-white flex items-center justify-center text-[10px] font-semibold">
           EN
@@ -210,6 +220,10 @@
         <span>Integrated Financial Management System</span>
       </div>
       <span>Prototype build &mdash; not connected to production data.</span>
+      <div class="flex items-center gap-2.5">
+        <span class="text-slate-400">Developed by</span>
+        <img src="assets/virtualgalaxy-logo.webp" alt="Virtual Galaxy" class="h-9" />
+      </div>
     </div>
   </footer>
 

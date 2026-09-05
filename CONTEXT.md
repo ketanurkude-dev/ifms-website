@@ -11,7 +11,7 @@ surface. Don't add it without asking first.
 ## Structure
 - Hero section + a card grid (`sm:grid-cols-2 lg:grid-cols-3`), one card per portal: icon,
   description, Sign in / Register links opening `target="_blank" rel="noopener"` to that portal's
-  frontend (`localhost:5173` employee, `:5174` pension, `:5175` vendor).
+  frontend (`localhost:7001` employee, `:7002` pension, `:7003` vendor).
 - A "help strip" at the bottom with a "New employee?" / "New pensioner?" / "New vendor?" quick-link
   row (4-column grid).
 

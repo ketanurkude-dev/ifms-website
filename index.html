@@ -71,7 +71,7 @@
           </p>
           <div class="flex gap-3">
             <a
-              href="http://localhost:5173/login"
+              href="http://localhost:7001/login"
               target="_blank"
               rel="noopener"
               class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-900"
@@ -79,7 +79,7 @@
               Sign in
             </a>
             <a
-              href="http://localhost:5173/register"
+              href="http://localhost:7001/register"
               target="_blank"
               rel="noopener"
               class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
@@ -101,7 +101,7 @@
           </p>
           <div class="flex gap-3">
             <a
-              href="http://localhost:5174/login"
+              href="http://localhost:7002/login"
               target="_blank"
               rel="noopener"
               class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-900"
@@ -109,7 +109,7 @@
               Sign in
             </a>
             <a
-              href="http://localhost:5174/register"
+              href="http://localhost:7002/register"
               target="_blank"
               rel="noopener"
               class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
@@ -131,7 +131,7 @@
           </p>
           <div class="flex gap-3">
             <a
-              href="http://localhost:5175/login"
+              href="http://localhost:7003/login"
               target="_blank"
               rel="noopener"
               class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-900"
@@ -139,7 +139,7 @@
               Sign in
             </a>
             <a
-              href="http://localhost:5175/register"
+              href="http://localhost:7003/register"
               target="_blank"
               rel="noopener"
               class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
@@ -195,7 +195,7 @@
       if (!number) return;
       resultBox.innerHTML = '<p class="text-sm text-slate-500">Checking...</p>';
       try {
-        const res = await fetch(`http://localhost:8000/certificates/verify/${encodeURIComponent(number)}`);
+        const res = await fetch(`http://localhost:9001/certificates/verify/${encodeURIComponent(number)}`);
         const data = await res.json();
         if (data.valid) {
           resultBox.innerHTML = `
@@ -234,14 +234,14 @@
       <div>
         <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">New employee?</p>
         <p class="text-slate-700">
-          <a href="http://localhost:5173/register" target="_blank" rel="noopener" class="text-blue-800 font-medium">Register</a>
+          <a href="http://localhost:7001/register" target="_blank" rel="noopener" class="text-blue-800 font-medium">Register</a>
           on the Employee Portal with your employee particulars.
         </p>
       </div>
       <div>
         <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">New vendor?</p>
         <p class="text-slate-700">
-          <a href="http://localhost:5175/register" target="_blank" rel="noopener" class="text-blue-800 font-medium">Register</a>
+          <a href="http://localhost:7003/register" target="_blank" rel="noopener" class="text-blue-800 font-medium">Register</a>
           on the Vendor Portal with your company particulars.
         </p>
       </div>

@@ -50,14 +50,15 @@
         Secure sign-in &middot; digitally signed documents
       </span>
       <h1 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-snug mb-3 tracking-tight">
-        One IFMS, two self-service portals
+        One IFMS, three self-service portals
       </h1>
       <p class="text-slate-600 text-base leading-relaxed mb-10 max-w-xl">
         Choose the portal that matches you. Serving employees is the
-        Employee Portal; serving retirees is the Pensioner Portal.
+        Employee Portal; serving retirees is the Pensioner Portal; serving
+        registered suppliers and contractors is the Vendor Portal.
       </p>
 
-      <div class="grid sm:grid-cols-2 gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Employee Portal card -->
         <div class="bg-white border border-blue-100 rounded-xl p-7 shadow-sm shadow-blue-900/5">
           <div class="w-11 h-11 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center mb-4">
@@ -109,6 +110,36 @@
             </a>
             <a
               href="http://localhost:5174/register"
+              target="_blank"
+              rel="noopener"
+              class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+
+        <!-- Vendor Portal card -->
+        <div class="bg-white border border-blue-100 rounded-xl p-7 shadow-sm shadow-blue-900/5">
+          <div class="w-11 h-11 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center mb-4">
+            <svg viewBox="0 0 24 24" class="icon w-5.5 h-5.5"><path d="M4 10.5 12 4l8 6.5" /><path d="M5.5 10v9h13v-9" /><path d="M10 19v-5h4v5" /></svg>
+          </div>
+          <h2 class="text-lg font-semibold text-slate-800 mb-1.5">Vendor Portal</h2>
+          <p class="text-sm text-slate-500 leading-relaxed mb-6">
+            Registration, contracts, invoices and payment tracking &mdash;
+            for registered suppliers, contractors and consultants.
+          </p>
+          <div class="flex gap-3">
+            <a
+              href="http://localhost:5175/login"
+              target="_blank"
+              rel="noopener"
+              class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-900"
+            >
+              Sign in
+            </a>
+            <a
+              href="http://localhost:5175/register"
               target="_blank"
               rel="noopener"
               class="border border-blue-200 text-blue-800 px-4 py-2 rounded text-sm font-medium hover:bg-blue-50"
@@ -191,7 +222,7 @@
 
   <!-- Help strip -->
   <section id="help" class="border-t border-blue-100 bg-slate-50">
-    <div class="max-w-5xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-8 text-sm">
+    <div class="max-w-5xl mx-auto px-6 py-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
       <div>
         <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Need help?</p>
         <p class="text-slate-700">Each portal has its own FAQ and grievance section once signed in.</p>
@@ -205,6 +236,13 @@
         <p class="text-slate-700">
           <a href="http://localhost:5173/register" target="_blank" rel="noopener" class="text-blue-800 font-medium">Register</a>
           on the Employee Portal with your employee particulars.
+        </p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">New vendor?</p>
+        <p class="text-slate-700">
+          <a href="http://localhost:5175/register" target="_blank" rel="noopener" class="text-blue-800 font-medium">Register</a>
+          on the Vendor Portal with your company particulars.
         </p>
       </div>
     </div>
